@@ -1,8 +1,5 @@
-# multiplatform-releases Specification
+## MODIFIED Requirements
 
-## Purpose
-TBD - created by archiving change multiplatform-release-builds. Update Purpose after archive.
-## Requirements
 ### Requirement: Automated Multi-Platform Release Asset Packaging
 The CI release workflows SHALL produce distinct, native installer and bundle assets for all supported platforms upon pushing a release tag, **without building or bundling the Arduino library zip**.
 
@@ -32,4 +29,3 @@ The CI release workflows SHALL produce distinct, native installer and bundle ass
 - **WHEN** any release workflow starts
 - **THEN** it proceeds directly to dependency install and `flutter build` without a library zip step
 - **AND** the workflow does not reference `rk-arduino/` or `scripts/build-library-zip.sh`
-
